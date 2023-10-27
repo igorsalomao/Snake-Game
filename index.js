@@ -32,16 +32,16 @@ const handleGameOver = () => {
 // Change velocity value based on key press
 
 const changeDirection = (e) => {
-    if (e.key === "ArrowUp" && velocityY !== 0.5) {
+    if (e.key === "ArrowUp" && velocityY !== 1) {
         velocityX = 0;
         velocityY = -0.5;
-    } else if (e.key === "ArrowDown" && velocityY !== -0.5) {
+    } else if (e.key === "ArrowDown" && velocityY !== -1) {
         velocityX = 0;
         velocityY = 0.5;
-    } else if (e.key === "ArrowLeft" && velocityX !== 0.5) {
+    } else if (e.key === "ArrowLeft" && velocityX !== 1) {
         velocityX = -0.5;
         velocityY = 0;
-    } else if (e.key === "ArrowRight" && velocityX !== -0.5) {
+    } else if (e.key === "ArrowRight" && velocityX !== -1) {
         velocityX = 0.5;
         velocityY = 0;
     }
